@@ -1,0 +1,195 @@
+body{
+  margin: 0;
+  padding: 0;
+color:rgb(1, 1, 31);
+font-size:xx-large;
+font-family:Arial, Helvetica, sans-serif;
+height:15apx;
+}
+
+#first{
+  background-image:url('https://media2.s-nbcnews.com/j/newscms/2017_44/2213861/171103-zora-robot-mn-1600_22b5fff7a972cdcb75446b7bbf8526a5.nbcnews-fp-1200-630.jpg');
+  background-size: cover;
+background-position:center;
+height:800px;
+margin: 0;
+padding: 0;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:0 20px;
+}
+button{
+font-weight: 600;
+  color:rgb(2, 2, 59);
+  text-transform: uppercase;
+  background:transparent; 
+  padding: 8px 15px 
+}
+
+.button:hover{
+background:blue;
+color:white;
+}
+
+em{
+  font-size:20px;
+} 
+
+@import url('https://fonts.googleapis.com/css?family=Libre+Caslon+Text:400,700&display=swap');
+
+body {
+  font-family: Libre Caslon Text;
+  margin: 0;
+  padding:0;
+
+}
+
+.body-text {
+  padding-top: 20vh;
+  text-align: center;
+  position: relative;
+}
+
+.hamburger-icon {
+  position: absolute;
+  z-index: 1;
+  top: 5vh;
+  left: 5vw;
+  padding-bottom: 2vh;
+}
+
+.hamburger-icon span {
+  height: 3px;
+  width: 40px;
+  background-color:rgb(2, 2, 49);
+  display: block;
+  margin: 5px 0px 5px 0px;
+  transition: 0.7s ease-in-out;
+  transform: none;
+}
+
+#openmenu:checked ~ .menu-pane {
+  left: -5vw;
+  transform: translateX(-5vw);
+}
+
+#openmenu:checked ~ .hamburger-icon span:nth-of-type(2) {
+  transform: translate(0%, 175%) rotate(-45deg);
+  background-color:white;
+}
+
+#openmenu:checked ~ .hamburger-icon span:nth-of-type(3) {
+  transform: rotate(45deg);
+  background-color:white;
+}
+
+#openmenu:checked ~ .hamburger-icon span:nth-of-type(1) {
+  opacity: 0;
+}
+
+#openmenu:checked ~ .hamburger-icon span:nth-of-type(4) {
+  opacity: 0;
+}
+
+div.menu-pane {
+  background-color:rgb(0, 0, 27);
+  position: absolute;
+  transform: translateX(-105vw);
+  transform-origin: (0, 0);
+  width:90vw;
+  height:800px;
+  transition: 0.6s ease-in-out;
+}
+
+.menu-pane p {
+  color:rgb(1, 1, 43);
+  font-size: 0.6em;
+}
+
+.menu-pane nav {
+  padding: 10%;
+}
+
+.menu-links li, a, span {
+      transition: 0.5s ease-in-out;
+}
+
+.menu-pane ul {
+  padding: 10%;
+  display: inline-block;
+}
+
+.menu-pane li {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: 10px;
+    font-size: 1em;
+}
+
+
+.menu-pane li:first-child {
+  font-size: 1.3em;
+  margin-left: -10px;
+}
+
+
+.menu-links li a {
+  color:white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+.menu-links li:hover a {
+  color:white;
+}
+
+.menu-links li:first-child:hover a {
+  color:white;  
+  background-color:rgb(1, 1, 41);
+}
+
+#QC-info {
+  background-color:rgb(1, 1, 44);
+    border: 2px solid;
+  border-color: rgb(1, 1, 51);
+display: block;
+  opacity: 0;
+  
+}
+
+.menu-links li:first-child:hover #QC-info {
+opacity: 1;
+}
+
+.menu-links li:first-child:hover #DC-info {
+opacity: 1;
+}
+
+#DC-info {
+  background-color:rgb(1, 1, 39);
+    border: 2px solid;
+  border-color: rgb(1, 1, 56);
+display: block;
+  opacity: 0;
+}
+
+
+.menu-links li:first-child a {
+  padding: 5px;
+}
+
+
+
+input.hamburger-checkbox {
+  position: absolute;
+  z-index: 3;
+  top: 5vh;
+  left: 5vw;
+  width: 10vw;
+  opacity: 0;
+  height: 6vh;
+}
